@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Quiz</title>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Concert+One|Nunito" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="/Projects/JSQuiz final/image/png-javascript-badge-picture-8.png">
+</head>
+<body>
+<!-- */*************************START PAGE**************************/* -->
+  <div class="container">
+    <div class="grid">  
+        <h1>Quiz in JavaScript</h1>
+          <div class="headline"></div>
+          <div class = "start-quiz">
+            <p class = 'descrip'>Test your knowledge about JavaScript!</p>
+            <button class='start-button dot' >START</button>
+          </div>
+<!-- */********************QUESTIONS********************/* -->
+      <div class = 'questions'>
+          <h2 class='question'></h2>
+          <ul class ="list"></ul>
+          <p class = 'question-number'></p>
+        <div class="footerline"></div>
+          <p class= "score"> Score:  </p>
+        <div class='submit'>
+          <button class="submit-button">Check Answer</button>
+        </div>
+        <div class='next'>
+          <button class="next-button">Next</button> 
+        </div>
+      </div>
+  <!-- */********************END PAGE********************/* -->
+      <div class = 'end-quiz'> 
+        <p class = 'end-score'></p>
+        <p class='comment'></p>
+        <button class="retake-button">RETAKE QUIZ</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="function.js"></script>
+</html>

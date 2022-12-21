@@ -1,0 +1,263 @@
+body {
+  box-sizing: border-box;
+  background:linear-gradient(360deg, #b99400 10%, #4f4f4f 60%);
+  font-family: 'Nunito', sans-serif;
+  color:#CCC;
+  font-size: 20px;
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+}
+
+.container {
+  padding-top: 50px;
+}
+/* a line below the head */
+.headline {
+  height: .5px;
+  width: 80%;
+  background-color: #fffd80;
+  margin: auto;
+}
+/* a line below question progress */
+.footerline {
+  height: .5px;
+  width: 480px;
+  background-color: #fffd80;
+  margin-top: 50px;
+  margin: auto;
+}
+/* box */
+.grid {
+	width: 600px;
+	height: 650px;
+	margin: 0 auto;
+	background-color: #4f4f4f;
+	padding: 10px 50px 10px 50px;
+  border: .5px solid #f2b632;
+	border-radius: 10px;
+	overflow: hidden;
+  box-shadow:  -7px -7px 14px #1b1b1b,
+              10px 10px 90px #858057;
+}
+/* Header */
+h1 {
+	background-color: rgba(41, 41, 41, 0.87);
+	font-size: 30px;
+	border-radius: 10px;
+	text-align: center;
+	color: #ffd323;
+	padding: 2px 0px;
+  width: 60%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:  -5px -5px 10px #232323,
+                5px 5px 10px #858057;
+}
+/* Header and questions */
+h1, h2 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* Questions */
+h2 {
+  font-size: 20px;
+}
+/* START CHECK ANSWER NEXT RETAKE QUIZ */
+button {
+  font-family: 'Dosis', sans-serif;
+	background-color: rgb(41, 41, 41);
+  padding-top: 1px;
+	width: 200px;
+  height: 40px;
+	font-size: 20px;
+	color: rgb(247, 247, 247);
+	border: .5px solid #f2b632;
+	border-radius: 10px;
+	transition: all 0.2s cubic-bezier(0.18, 1.08, 1, 1);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  letter-spacing: .5px;
+	background-color: rgb(41, 41, 41);
+	border-color: 10px solid #f2b632;
+	color: rgb(255, 255, 255);
+  box-shadow:  -5px -5px 10px #232323,
+  5px 5px 10px #858057;
+}
+
+button:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+
+button:hover {
+	transition: all 0.2s linear;
+}
+
+button:focus {
+	outline: 0;
+}
+/* Start button and description */
+.start-quiz {
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 200px;
+  color: white;
+}
+
+.descrip {
+  font-size: larger;
+}
+
+.questions, .end-quiz {
+  color: #ffffdb;
+  display: none;
+  text-align: center;
+  padding-bottom: 200px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+}
+/* Last part of Quiz */
+.end-quiz {
+  border-radius: 10px;
+  padding-top: 80px;
+  height: 100px;
+  font-size: 30px;
+  box-shadow: inset -5px -5px 10px #1d1d1d,
+              inset 3px 3px 7px #989898;
+}
+/* Progress */
+.question-number {
+  font-size: 20px;
+  color: #ffffdb;
+  margin-top: 0px;
+}
+/* unordered list design */
+ul {
+  list-style: none;
+  padding: 0;
+}
+/* Answer option design */
+li {
+  display: inline-block;
+  background-color: rgba(41, 41, 41, 0.664);
+  color: #ffffff;
+	border: .5px solid #f2b632;
+  padding-top: 3px;
+	width: 200px;
+  height: 30px;
+  margin: 10px 15px 10px 15px;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: all 0.2s cubic-bezier(0.18, 1.08, 1, 1);
+}
+/* Answer option hover */
+li:hover {
+	cursor: crosshair;
+	background-color: rgba(41, 41, 41, 0.851);
+	border: .5px solid #f2b632;
+  letter-spacing: 1px;
+	color: rgb(255, 204, 0);
+	font-weight: bolder;
+  box-shadow:  -5px -5px 10px #232323,
+  5px 5px 10px #858057;
+}
+/* Answer option hover */
+li:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+}
+/* Answer option hover */
+li:hover {
+	transition: all 0.2s linear;
+}
+
+li:focus li:active{
+	outline: 0;
+}
+/* Start button */
+.start-button{
+  color:white;
+}
+
+/* selected option focus display */
+.selected {
+  cursor: pointer;
+  letter-spacing: 1px;
+	background-color: rgb(41, 41, 41);
+	border: .5px solid #f2b632;
+	color: rgb(255, 204, 0);
+	font-weight: bolder;
+  transform:scale(1.1,1.1);
+  -webkit-transform:scale(1.1,1.1);
+  -moz-transform:scale(1.1,1.1);
+  box-shadow:  -5px -5px 10px #232323,
+                5px 5px 10px #858057;  
+}
+/* color if incorrect */
+.correct {
+  background-color: green;
+  box-shadow:  -5px -5px 10px #232323,
+  5px 5px 10px #5a9a48;
+}
+/* color if incorrect */
+.incorrect {
+  background-color: red;
+  box-shadow:  -5px -5px 10px #232323,
+  5px 5px 10px #fe4a4a;  
+}
+/* START BUTTON */
+.dot {
+  color: rgb(211, 211, 211);
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: inline-block;
+}
+/* Displayed Score */
+.score {
+  font-size: 20px;
+  color: #f2b632;
+  margin-bottom: 0px;
+}
+/* End score */
+.end-score {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: red;
+  text-decoration-thickness: 1px;
+}
+
+.ml11 .letters {
+  display: inline-block;
+  line-height: 1em;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* COMMENT ANIMATED */
+
+.comment {
+  color: #ffffff;
+  padding: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.comment .letter {
+  display: inline-block;
+  line-height: 1em;
+}
