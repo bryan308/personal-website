@@ -971,22 +971,11 @@ footer {
   filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.5));
 }
 
-.arrow-div {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgray;
-  border-radius: 10px;
-  font-size: 0;  /* add this property */
-}
-
 /* circle shortcut button */
 #back-to-top-btn:hover, #back-to-top-btn:focus {
-  background-color: #09005d2f;
-  color: #fff;
-  border: 3px solid #d8d3ff;  
+  background-color: #085d002f;
+  color: rgb(0, 255, 60);
+  border: 3px solid #74ff78;  
 }
 
 @media(max-width: 992px) {
@@ -996,10 +985,6 @@ footer {
     height: 40px; 
     bottom: 15px; 
     right: 15px;
-  }
-  .arrow-div {
-    height: 40px;
-    width: 40px;
   }
 }
 
