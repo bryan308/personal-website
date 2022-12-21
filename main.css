@@ -1073,7 +1073,7 @@ footer {
     font-family: 'Kanit', sans-serif;
     padding: 20px;
     background-color: #aec3b0;
-    color: rgb(74, 74, 74);
+    color: rgb(50, 50, 50);
     margin-bottom: 15px;
     position: fixed;
     top: 50%;
@@ -1122,5 +1122,5 @@ footer {
 }
 
 .closebtn:hover {
-    color: black;
+    color: rgb(255, 45, 45);
 }
