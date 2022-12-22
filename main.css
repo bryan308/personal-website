@@ -327,7 +327,7 @@ nav {
     color: rgba(0, 0, 0, 0.688);
     text-align: justify;
     padding: 10px;
-    letter-spacing: -1px;
+    letter-spacing: -.5px;
 }
   
 .tag {
@@ -440,7 +440,7 @@ nav {
 .project-content p {
     color: rgba(0, 0, 0, 0.688);
     text-align: justify;
-    letter-spacing: -1px;
+    letter-spacing: -.5px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -581,7 +581,7 @@ nav {
 .text-container p {
     color: rgba(0, 0, 0, 0.688);
     padding: 10px 0px 10px 0px;
-    letter-spacing: -1px;
+    letter-spacing: -.5px;
     text-align: justify;
 }
   
