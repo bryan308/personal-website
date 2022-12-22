@@ -10,35 +10,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <link rel="icon" href="images/background2.png">
   <title>@cdrcangulo</title>
 </head>
 <body>
 <nav class="nav">
-  <div class="logo">
+  <div class="logo" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
     <h4>
       @cdrcangulo
     </h4>
   </div>
   <ul class="nav-links">
-    <li>
+    <li data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
       <a href="#home" class="active">home</a>
     </li>
-    <li>
+    <li data-aos="flip-down" data-aos-duration="1000" data-aos-delay="500">
       <a href="#project" >projects</a>
     </li>
-    <li>
+    <li data-aos="flip-down" data-aos-duration="1000" data-aos-delay="700">
       <a href="#about">about</a>
     </li>
-    <li>
+    <li data-aos="flip-down" data-aos-duration="1000" data-aos-delay="900">
       <a href="#contact">get in touch</a>
     </li>
   </ul>
 </nav>
 <div id="home" class="section">
   <div class="intro">
-    <div class="intro-text">
+    <div class="intro-text" data-aos="slide-right" data-aos-duration="1000">
       <h4>Hello, they call me <span>Ced</span>!</h4>
         <h1>I'm a Senior High School <span>ICT Student</span>.</h1>
         <div class="icons">
@@ -47,23 +48,23 @@
           <a href="#contact" class="fa fa-envelope"></a>
         </div>
       </div>
-  <div class="cover">
+  <div class="cover" data-aos="slide-left" data-aos-duration="1000">
     <img src="images/background1.png" alt="home icon">
   </div>
 </div>
 </div>
 <div id="featured-project" class="section">
-  <div class="container reveal">
-    <div class="project-text">
+  <div class="container">
+    <div class="project-text" data-aos="fade-right" data-aos-duration="1100">
       <h2>featured project</h2>
       <h4>_latest</h4>
     </div>
   <div class="featured-body">
     <div class="featured-item">
-      <div class="featured-image">
+      <div class="featured-image" data-aos="fade-right" data-aos-duration="1100">
         <img src="images/featured-project2.png">
       </div>
-    <div class="featured-content">
+    <div class="featured-content" data-aos="fade-left" data-aos-duration="1100">
       <div class="content-link">
         <a href="Projects/JSQuiz final/index.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
       </div>
@@ -78,10 +79,10 @@
     </div>
     </div>
     <div class="featured-item">
-      <div class="featured-image">
+      <div class="featured-image" data-aos="fade-right" data-aos-duration="1100">
         <img src="images/featured-project1.png">
       </div>
-    <div class="featured-content">
+    <div class="featured-content" data-aos="fade-left" data-aos-duration="1100">
       <div class="content-link">
         <a href="Projects/JSGame/index.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
       </div>
@@ -96,19 +97,19 @@
     </div>
     </div>
   </div>
-  <div class="warning">
+  <div class="warning" data-aos="fade-up" data-aos-duration="1000">
     <p>Note: This websites are not yet mobile responsive. Please view on a desktop or laptop for the best experience.</p>
   </div>
   </div>
 </div>
-<div id="project" class="section">
-  <div class="container reveal">
+<div id="project" class="section" data-aos="fade-right" data-aos-duration="1200">
+  <div class="container">
     <h2>projects</h2>
-      <div class="project-text">
+      <div class="project-text" data-aos="fade-right" data-aos-duration="1200">
         <h4>_my outputs in my major subject</h4>
       </div>
       <div class="card-list">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="project-content">
             <div class="project-link">
               <a href="Projects/1JSClock/index.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -123,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
           <div class="project-content">
             <div class="project-link">
               <a href="Projects/JSComboBox/index.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -138,7 +139,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
           <div class="project-content">
             <div class="project-link">
               <a href="Projects/JSDropdown/index.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -153,7 +154,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
           <div class="project-content">
             <div class="project-link">
               <a href="Projects/JSQuiz/index.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -171,8 +172,8 @@
       </div>
   </div>
 </div>
-<div id="about" class="container reveal">
-  <div class="text-container">
+<div id="about" class="container">
+  <div class="text-container" data-aos="fade-right" data-aos-duration="1100">
     <div class="about-icon">
       <a href="https://www.facebook.com/cedric.angulo.18" target="_blank" class="fa fa-facebook"></a>
       <a href="https://github.com/bryan308" target="_blank" class="fa fa-github"></a>
@@ -193,7 +194,7 @@
         <h5>#outgoing</h5>
       </div>
     </div>
-    <div class="about-image">
+    <div class="about-image" data-aos="fade-left" data-aos-duration="1100">
       <img src="images/IMG_20191207_084513_1.jpg">
       <img src="images/IMG_20211211_190617.jpg">
       <img src="images/IMG_20221021_131147.png">
@@ -219,4 +220,5 @@
 </button>
 </body>
 <script src="function.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
