@@ -655,7 +655,7 @@ nav {
 @media screen and (max-width: 992px) {
     #about {
       flex-direction: column;
-      margin: 20px;
+      margin: 50px;
     }
     .text-container {
       font-size: 1rem;
@@ -797,14 +797,14 @@ footer {
         height: auto;
     }
     .intro {
-        width: auto;
+        width: 100%;
         margin: 0px;
     }
     .intro-text {
         text-align: center;
-        font-size: 25px;
-        width: 90%;
-        margin: 0;
+        font-size: 20px;
+        width: 60%;
+        margin: 50px;
         padding: 0;
     }
     #featured-project {
@@ -841,12 +841,12 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     .intro {
-        width: auto;
+        width: 100%;
         margin: 0px;
     }
     .intro-text {
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
         width: 60%;
         padding: 0;
     }
@@ -1053,7 +1053,9 @@ footer {
     transform: translate3d(0, 100%, 0);
   }
 }
-/* Alert Box */
+
+/* Alert box */
+
 .alert {
     font-family: 'Kanit', sans-serif;
     padding: 20px;
