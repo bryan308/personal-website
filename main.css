@@ -327,7 +327,7 @@ nav {
     color: rgba(0, 0, 0, 0.688);
     text-align: justify;
     padding: 10px;
-    letter-spacing: -.5px;
+    letter-spacing: -1px;
 }
   
 .tag {
@@ -440,7 +440,7 @@ nav {
 .project-content p {
     color: rgba(0, 0, 0, 0.688);
     text-align: justify;
-    letter-spacing: -.5px;
+    letter-spacing: -1px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -939,18 +939,6 @@ footer {
         padding: 0;
     }
 }
-
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s cubic-bezier(0, 0.65, 0.38, 0.97);
-}
-  
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-}
 /* back to top button style */
 #back-to-top-btn {
   display: none;
@@ -1112,3 +1100,17 @@ footer {
 .closebtn:hover {
     color: rgb(255, 45, 45);
 }
+
+/* Contact scroll animation */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s cubic-bezier(0, 0.65, 0.38, 0.97);
+}
+  
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
