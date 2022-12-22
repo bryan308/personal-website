@@ -693,7 +693,7 @@ nav {
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.688);
     padding: 10px 0px 10px 0px;
-    letter-spacing: -1px;
+    letter-spacing: -.5px;
     margin: 20px 200px;
 }
   
