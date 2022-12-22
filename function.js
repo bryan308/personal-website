@@ -132,3 +132,7 @@ function sendMessage() {
     alertBox.style.display = "none";
   }
 }
+/* Scroll animation */
+window.onload = function() {
+  AOS.init();
+};
