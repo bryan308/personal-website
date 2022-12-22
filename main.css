@@ -654,7 +654,7 @@ nav {
 @media screen and (max-width: 992px) {
     #about {
       flex-direction: column;
-      margin: 50px;
+      margin: 20px;
     }
     .text-container {
       font-size: 1rem;
