@@ -328,7 +328,6 @@ nav {
     text-align: justify;
     padding: 10px;
     letter-spacing: -1px;
-    font-size: 17px;
 }
   
 .tag {
@@ -772,7 +771,6 @@ footer {
     }
     .project-content p {
         padding: 5px;
-        text-indent: 5px;
     }
     #project .container {
         margin: 10px;
@@ -900,6 +898,9 @@ footer {
     }
     #project {
         height: auto;
+        font-size: 1rem;
+    }
+    #featured-project {
         font-size: 1rem;
     }
     .card-list {
