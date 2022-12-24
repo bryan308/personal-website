@@ -19,6 +19,7 @@ html {
 
 body {
     font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
     background-color: #eff6e0;
     font-size: 1.2rem;
 }
