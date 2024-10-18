@@ -65,5 +65,19 @@
 	}
 	body {
 		@apply bg-background text-foreground;
+		background-color: #000000;
 	}
 }
+nav {
+	text-align: center; 
+	padding: 20px; 
+	border: 1px solid #e44a4a; 
+	background-color: #000000; 
+  }
+  
+  nav a {
+	display: inline-block; 
+	margin: 0 100px; 
+	text-decoration: none; 
+	color: rgb(221, 83, 83); 
+  }
