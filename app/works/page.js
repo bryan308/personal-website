@@ -11,7 +11,7 @@ function WorksPage() {
 				<div className="grid grid-cols-1 lg:grid-cols-2 place-items-center mt-8">
 					<Card
 						title="Laboratory 1"
-						description="Created a student directory table using HTML and CSS, and uploaded screenshots of the source code and output to Google Classroom."
+						description="I create a student directory table to display information about students using HTML tables and apply basic styling using CSS"
 					/>
 					<Card
 						title="Laboratory 2"

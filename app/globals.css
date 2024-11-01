@@ -59,6 +59,11 @@
 	}
 }
 
+@font-face {
+	font-family: "CinzelDecorative700";
+	src: url("./fonts/CinzelDecorative-Bold.ttf") format("ttf");
+}
+
 @layer base {
 	* {
 		/* outline: red dashed 1px; */
@@ -69,6 +74,7 @@
 	}
 
 	h1 {
+		font-family: var(--font-cinzel-decorative);
 		@apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
 	}
 
