@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 import React from "react"
 
 function AboutPage() {
@@ -18,7 +19,13 @@ function AboutPage() {
 					<p>I have other skills like singing, and primarily I am good at it.</p>
 				</div>
 				<div className="flex items-center justify-center h-full w-2/4">
-					<div className="size-60 border rounded-xl bg-foreground/10"></div>
+					<Image
+						src="/images/shadcn.jpg"
+						alt="me"
+						width={384}
+						height={384}
+						className="size-60 rounded-xl"
+					/>
 				</div>
 			</div>
 			<div className="mt-12">
