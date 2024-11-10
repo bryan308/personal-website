@@ -10,17 +10,20 @@ import { cn } from "@/lib/utils"
 const cinzelDecorative = Cinzel_Decorative({
 	variable: "--font-cinzel-decorative",
 	weight: ["400", "700", "900"],
+	subsets: ["latin"],
 })
 
 const header = Bricolage_Grotesque({
 	variable: "--header",
 	// weight: ["400", "700"],
+	subsets: ["latin"],
 })
 
 // default font for body text
 const montserrat = Montserrat({
 	variable: "--font-montserrat",
 	weight: ["400", "700"],
+	subsets: ["latin"],
 })
 
 export const metadata = {
