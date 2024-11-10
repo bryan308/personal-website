@@ -59,14 +59,8 @@
 	}
 }
 
-/* @font-face {
-	font-family: "CinzelDecorative700";
-	src: url("./fonts/CinzelDecorative-Bold.ttf") format("ttf");
-} */
-
 @layer base {
 	* {
-		/* outline: red dashed 1px; */
 		@apply border-border;
 	}
 	body {
@@ -74,15 +68,17 @@
 	}
 
 	h1 {
-		font-family: var(--font-cinzel-decorative);
+		font-family: var(--header);
 		@apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
 	}
-
+	
 	h2 {
+		font-family: var(--header);
 		@apply scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
 	}
-
+	
 	h4 {
+		font-family: var(--header);
 		@apply font-bold text-xl;
 	}
 
@@ -101,6 +97,7 @@
 		transform: translateY(0);
 	}
 }
+
 @keyframes slideUp {
 	from {
 		opacity: 1;
@@ -110,8 +107,4 @@
 		opacity: 0;
 		transform: translateY(-20px);
 	}
-}
-
-.asd {
-	color: #18dbc8;
 }

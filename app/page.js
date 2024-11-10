@@ -17,7 +17,7 @@ export default function Home() {
 				/>
 				<div className="flex flex-col-reverse items-center justify-center md:justify-evenly gap-8 h-full mx-6 my-28 md:mx-auto lg:flex-row max-w-7xl rounded-tl-3xl rounded-tr-3xl bg-cover bg-center">
 					<div className="p-4 text-center lg:text-left md:p-0">
-						<h1 className="text-4xl font-bold tracking-tight uppercase scroll-m-20 lg:text-7xl">
+						<h1 className="text-5xl font-semibold uppercase tracking-tight scroll-m-20 lg:text-7xl">
 							Welcome People
 						</h1>
 						<p className="mt-4 text-lg max-w-xl">
@@ -28,7 +28,7 @@ export default function Home() {
 					</div>
 					<div className="flex flex-col items-center">
 						<Image
-							className="size-52 lg:size-60 rounded-full"
+							className="size-52 lg:size-60 rounded-xl"
 							src="/images/me.jpg"
 							alt="me"
 							width={384}

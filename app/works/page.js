@@ -1,42 +1,43 @@
+import Section from "@/components/shared/section"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import React from "react"
 
 function WorksPage() {
 	return (
-		<div className="relative min-h-screen p-4 md:p-12 mt-16">
-			<h1 className="mb-4">WORKS</h1>
+		<Section className="relative">
+			<h1 className="mb-4 text-center">WORKS</h1>
 			<div>
-				<h2>My works from ITWST02</h2>
+				<h2 className="text-center">My works from ITWST02</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center mt-8">
 					<Card
 						title="Laboratory 1"
 						description="I create a student directory table to display information about students using HTML tables and apply basic styling using CSS"
-						image="/lab1.png"
+						image="/images/laboratories/lab1.png"
 					/>
 					<Card
 						title="Laboratory 2"
 						description="Developed a responsive web page with interactive elements using JavaScript and CSS."
-						image="/lab2.png"
+						image="/images/laboratories/lab2.png"
 					/>
 					<Card
 						title="Laboratory 3"
 						description="Developed a responsive web page with interactive elements using JavaScript and CSS."
-						image="/lab3.png"
+						image="/images/laboratories/lab3.png"
 					/>
 					<Card
 						title="Laboratory 4"
 						description="Developed a responsive web page with interactive elements using JavaScript and CSS."
-						image="/lab4.png"
+						image="/images/laboratories/lab4.png"
 					/>
 					<Card
 						title="Laboratory 5"
 						description="Developed a responsive web page with interactive elements using JavaScript and CSS."
-						image="/lab5.png"
+						image="/images/laboratories/lab5.png"
 					/>
 				</div>
 			</div>
-		</div>
+		</Section>
 	)
 }
 
