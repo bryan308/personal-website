@@ -20,7 +20,7 @@ function AboutPage() {
 				</div>
 				<div className="flex items-center justify-center h-full w-2/4">
 					<Image
-						src="/images/shadcn.jpg"
+						src="/images/me.jpg"
 						alt="me"
 						width={384}
 						height={384}

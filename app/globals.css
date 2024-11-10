@@ -59,10 +59,10 @@
 	}
 }
 
-@font-face {
+/* @font-face {
 	font-family: "CinzelDecorative700";
 	src: url("./fonts/CinzelDecorative-Bold.ttf") format("ttf");
-}
+} */
 
 @layer base {
 	* {
@@ -110,4 +110,8 @@
 		opacity: 0;
 		transform: translateY(-20px);
 	}
+}
+
+.asd {
+	color: #18dbc8;
 }
