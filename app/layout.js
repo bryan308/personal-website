@@ -1,4 +1,4 @@
-import { Bricolage_Grotesque, Cinzel_Decorative, Montserrat } from "next/font/google"
+import { Bricolage_Grotesque, Montserrat } from "next/font/google"
 
 import "./globals.css"
 
@@ -7,12 +7,6 @@ import FloatingNav from "@/components/shared/nav"
 import { cn } from "@/lib/utils"
 
 // for page titles and headers
-const cinzelDecorative = Cinzel_Decorative({
-	variable: "--font-cinzel-decorative",
-	weight: ["400", "700", "900"],
-	subsets: ["latin"],
-})
-
 const header = Bricolage_Grotesque({
 	variable: "--header",
 	// weight: ["400", "700"],
@@ -34,14 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body
-				className={cn(
-					"antialiased",
-					montserrat.className,
-					cinzelDecorative.variable,
-					header.variable
-				)}
-			>
+			<body className={cn("antialiased", montserrat.className, header.variable)}>
 				<Providers>
 					<FloatingNav />
 					{children}
