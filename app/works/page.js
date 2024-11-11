@@ -6,10 +6,10 @@ import React from "react"
 function WorksPage() {
 	return (
 		<Section className="relative">
-			<h1 className="mb-4 text-center">WORKS</h1>
+			<h1 className="mb-4 text-center">Works</h1>
 			<div>
 				<h2 className="text-center">My works from ITWST02</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center mt-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-8">
 					<Card
 						title="Laboratory 1"
 						description="I create a student directory table to display information about students using HTML tables and apply basic styling using CSS"
@@ -46,20 +46,25 @@ export default WorksPage
 const Card = ({ title, image = "/images/sample.png", description, className, ...props }) => {
 	return (
 		<div
-			className={cn("flex flex-col justify-start items-start p-4 max-w-lg h-full", className)}
+			className={cn(
+				"flex flex-col justify-start items-start max-w-lg h-full rounded-xl overflow-hidden",
+				className
+			)}
 			{...props}
 		>
-			<div className="mb-4">
+			<div>
 				<Image
 					src={image}
 					alt={title}
 					width={1800}
 					height={1016}
-					className="rounded-lg"
+					// className="rounded-lg"
 				/>
 			</div>
-			<h4>{title}</h4>
-			<p className="mt-4">{description}</p>
+			<div className="p-4">
+				<h4>{title}</h4>
+				<p>{description}</p>
+			</div>
 		</div>
 	)
 }
