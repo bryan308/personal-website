@@ -1,26 +1,23 @@
-import localFont from "next/font/local"
-import { Cinzel_Decorative } from "next/font/google"
+import { Bricolage_Grotesque, Montserrat } from "next/font/google"
 
 import "./globals.css"
 
 import Providers from "@/components/shared/theme-provider"
 import FloatingNav from "@/components/shared/nav"
+import { cn } from "@/lib/utils"
 
-const geistSans = localFont({
-	src: "./fonts/GeistVF.woff",
-	variable: "--font-geist-sans",
-	weight: "100 900",
+// for page titles and headers
+const header = Bricolage_Grotesque({
+	variable: "--header",
+	// weight: ["400", "700"],
+	subsets: ["latin"],
 })
 
-const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
-	variable: "--font-geist-mono",
-	weight: "100 900",
-})
-
-const cinzelDecorative = Cinzel_Decorative({
-	variable: "--font-cinzel-decorative",
-	weight: ["400", "700", "900"],
+// default font for body text
+const montserrat = Montserrat({
+	variable: "--font-montserrat",
+	weight: ["400", "700"],
+	subsets: ["latin"],
 })
 
 export const metadata = {
@@ -31,9 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} ${cinzelDecorative.variable} antialiased`}
-			>
+			<body className={cn("antialiased", montserrat.className, header.variable)}>
 				<Providers>
 					<FloatingNav />
 					{children}
