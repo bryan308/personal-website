@@ -1,4 +1,4 @@
-import GradientMockup from "@/components/shared/gradient-mockup"
+import GradientMockup from "@/components/ui/gradient-mockup"
 import Section from "@/components/shared/section"
 import { Lamp } from "@/components/ui/lamp"
 import { cn } from "@/lib/utils"
@@ -66,9 +66,9 @@ function AboutPage() {
 					</div>
 				</div>
 			</Section>
-			<div className="mt-12">
-				<Lamp />
-			</div>
+			<Lamp />
+			{/* <div className="mt-12">
+			</div> */}
 		</>
 	)
 }

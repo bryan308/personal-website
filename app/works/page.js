@@ -1,7 +1,9 @@
-import Section from "@/components/shared/section"
-import { cn } from "@/lib/utils"
-import Image from "next/image"
 import React from "react"
+import { cn } from "@/lib/utils"
+
+import Image from "next/image"
+import Section from "@/components/shared/section"
+import GradientMockup from "@/components/ui/gradient-mockup"
 
 function WorksPage() {
 	return (
@@ -37,6 +39,7 @@ function WorksPage() {
 					/>
 				</div>
 			</div>
+			<GradientMockup src="/images/noisy-grad2.jpg" />
 		</Section>
 	)
 }
