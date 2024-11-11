@@ -14,7 +14,7 @@ export function ModeToggle() {
 	}, [])
 
 	if (!mounted) {
-		return <LoaderIcon className="text-muted-foreground w-12 h-12 md:w-5 md:h-5 animate-spin" />
+		return <LoaderIcon className="text-foreground w-12 h-12 md:w-5 md:h-5 p-4 animate-spin" />
 	}
 
 	const isLight = theme === "light"

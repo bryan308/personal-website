@@ -55,7 +55,7 @@ export default function FloatingNav() {
 						</Link>
 						<div className="hidden sm:flex items-center gap-4">
 							<NavLink href="/">Home</NavLink>
-							<NavLink href="/works">Works</NavLink>
+							<NavLink href="/skills">Skills</NavLink>
 							<NavLink href="/about">About</NavLink>
 							<NavLink href="/contact">Contact</NavLink>
 						</div>
@@ -86,10 +86,10 @@ export default function FloatingNav() {
 							Home
 						</NavLink>
 						<NavLink
-							href="/works"
+							href="/skills"
 							onClick={closeMobileMenu}
 						>
-							Works
+							Skills
 						</NavLink>
 						<NavLink
 							href="/about"
