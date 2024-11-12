@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Section from "@/components/shared/section"
 import GradientMockup from "@/components/ui/gradient-mockup"
+import { Highlights } from "@/components/ui/highlights"
 
 function SkillsPage() {
 	return (
@@ -45,46 +46,36 @@ function SkillsPage() {
 			</div>
 			<div className="my-20">
 				<h2 className="text-center">My Favorite Heroes</h2>
-				<div className="grid grid-cols-2 md:grid-cols-3 gap-12 mt-12">
+				<div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mt-12">
 					<HeroCard
 						heroName="Hanabi"
-						image="/images/hanabi.jpg"
+						image="/images/heroes/hanabi.jpg"
 					/>
 					<HeroCard
 						heroName="Cyclops"
-						image="/images/cyclops.jpg"
+						image="/images/heroes/cyclops.jpg"
 					/>
 					<HeroCard
 						heroName="Bruno"
-						image="/images/bruno.jpg"
+						image="/images/heroes/bruno.jpg"
 					/>
 					<HeroCard
 						heroName="Gusion"
-						image="/images/gusion.jpg"
+						image="/images/heroes/gusion.jpg"
 					/>
 					<HeroCard
 						heroName="Guinevere"
-						image="/images/guinevere.jpg"
+						image="/images/heroes/guinevere.jpg"
 					/>
 					<HeroCard
 						heroName="Chou"
-						image="/images/chou.jpg"
+						image="/images/heroes/chou.jpg"
 					/>
 				</div>
 			</div>
 			<div className="my-20">
 				<h2 className="text-center">Highlights</h2>
-				<video
-					autoplay
-					// muted
-					className="rounded-xl mt-12"
-					controls
-				>
-					<source
-						src="/highlights.mp4"
-						type="video/mp4"
-					/>
-				</video>
+				<Highlights />
 			</div>
 		</Section>
 	)
@@ -93,8 +84,8 @@ function SkillsPage() {
 export default SkillsPage
 
 export const metadata = {
-	title: "My Skills",
-	description: "How are you interested in me?",
+	title: "Skills",
+	description: "",
 }
 
 const Card = ({ title, image = "/images/sample.png", description, className, ...props }) => {
@@ -125,13 +116,10 @@ const Card = ({ title, image = "/images/sample.png", description, className, ...
 
 const HeroCard = ({ heroName = "Hero", image }) => {
 	return (
-		<div
-			role="article"
-			className=""
-		>
+		<div>
 			<div>
 				<Image
-					className="max-h-96 w-auto block mx-auto rounded-xl"
+					className="max-h-96 w-auto block mx-auto rounded-xl outline-4 outline outline-primary/20"
 					src={image}
 					alt={heroName}
 					width={736}
@@ -139,7 +127,7 @@ const HeroCard = ({ heroName = "Hero", image }) => {
 					quality={100}
 				/>
 			</div>
-			<h4 className="text-center">{heroName}</h4>
+			<h4 className="text-center mt-4">{heroName}</h4>
 		</div>
 	)
 }
