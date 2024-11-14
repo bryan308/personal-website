@@ -11,13 +11,6 @@ export default function Home() {
 					<div className="absolute w-[120%] h-[800px] -bottom-60 -z-10 rounded-[200px] blur-[122px] bg-gradient-to-t from-[#021d62] to-[#18db71]" />
 					<div className="absolute w-full max-w-4xl h-[400px] -bottom-[42rem] -z-10 rounded-3xl blur-[122px] bg-[#0f6b7e]" />
 				</div>
-				<div
-					className="absolute inset-0 -z-10 opacity-5"
-					style={{
-						backgroundImage: "url('/images/noise.png')",
-						backgroundRepeat: "repeat",
-					}}
-				/>
 				<div className="z-10 flex flex-col-reverse items-center justify-center md:justify-evenly gap-8 h-full mx-6 my-28 md:mx-auto lg:flex-row max-w-7xl">
 					<div className="p-4 text-center lg:text-left md:p-0">
 						<motion.h1
