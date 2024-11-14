@@ -9,9 +9,9 @@ export default function Home() {
 					<div className="absolute w-full max-w-4xl h-[400px] -bottom-[42rem] -z-10 rounded-3xl blur-[122px] bg-[#0f6b7e]" />
 				</div>
 				<div
-					className="absolute inset-0 -z-10 opacity-20"
+					className="absolute inset-0 -z-10 opacity-5"
 					style={{
-						backgroundImage: "url('/images/noise.webp')",
+						backgroundImage: "url('/images/noise.png')",
 						backgroundRepeat: "repeat",
 					}}
 				/>

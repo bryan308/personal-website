@@ -1,6 +1,6 @@
 import GradientMockup from "@/components/ui/gradient-mockup"
 import Section from "@/components/shared/section"
-import { Lamp } from "@/components/ui/lamp"
+import { Lamp } from "@/components/shared/skills/lamp"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import React from "react"
