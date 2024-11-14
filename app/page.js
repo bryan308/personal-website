@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "motion/react"
 import Image from "next/image"
 
 export default function Home() {
@@ -17,24 +20,40 @@ export default function Home() {
 				/>
 				<div className="z-10 flex flex-col-reverse items-center justify-center md:justify-evenly gap-8 h-full mx-6 my-28 md:mx-auto lg:flex-row max-w-7xl">
 					<div className="p-4 text-center lg:text-left md:p-0">
-						<h1 className="text-5xl font-bold uppercase tracking-tight scroll-m-20 lg:text-7xl">
+						<motion.h1
+							initial={{ opacity: 0, y: 50 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.25, delay: 0.2 }}
+							className="text-5xl font-bold uppercase tracking-tight scroll-m-20 lg:text-7xl"
+						>
 							Welcome People
-						</h1>
-						<p className="mt-4 text-lg max-w-xl">
+						</motion.h1>
+						<motion.p
+							initial={{ opacity: 0, y: 50 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.25, delay: 0.4 }}
+							className="mt-4 text-lg max-w-xl"
+						>
 							You are invited you to explore my talents and abilities, which I continually enhance
 							throughout my journey. Each experience has contributed to my growth, allowing me to
 							develop a diverse skill set and a unique perspective.
-						</p>
+						</motion.p>
 					</div>
-					<div className="flex flex-col items-center">
+					<motion.div
+						initial={{ opacity: 0, scale: 0 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ duration: 0.25, delay: 0.6 }}
+						className="flex flex-col items-center"
+					>
 						<Image
 							className="size-52 lg:size-60 rounded-full"
 							src="/images/me.jpg"
 							alt="picture of me"
 							width={384}
 							height={384}
+							priority
 						/>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</>

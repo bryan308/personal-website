@@ -1,11 +1,32 @@
 import GradientMockup from "@/components/ui/gradient-mockup"
 import Section from "@/components/shared/section"
-import { Lamp } from "@/components/shared/skills/lamp"
+import { Lamp } from "@/components/shared/about/lamp"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import React from "react"
 
 function AboutPage() {
+	const gridItems = [
+		{ title: "Location", content: "Santa Rosa N. E.", className: "md:border-r border-b" },
+		{ title: "Email", content: "rainielsevilla27@gmail.com", className: "border-b" },
+		{
+			title: "Contact",
+			content: "09169733670",
+			className: "md:border-r lg:border-r-0 lg:border-l border-b",
+		},
+		{
+			title: "Strength",
+			content: "Have a wide patience",
+			className: "border-b lg:border-b-0 lg:border-r",
+		},
+		{
+			title: "Abilities",
+			content: "Multitask, Communicate Well, Can blend to a group",
+			className: "border-b md:border-b-0 md:border-r lg:border-r-0",
+		},
+		{ title: "Weakness", content: "Can distract easily", className: "lg:border-l" },
+	]
+
 	return (
 		<>
 			<Section>
@@ -38,37 +59,19 @@ function AboutPage() {
 				<div className="mt-12">
 					<h2 className="font-semibold text-center">Information</h2>
 					<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-						<GridItem className="md:border-r border-b ">
-							<h4>Location</h4>
-							<p>Santa Rosa N. E.</p>
-						</GridItem>
-						<GridItem className="border-b">
-							<h4>Email</h4>
-							<p>rainielsevilla27@gmail.com</p>
-						</GridItem>
-						<GridItem className="md:border-r lg:border-r-0 lg:border-l border-b">
-							<h4>Contact</h4>
-							<p>09169733670</p>
-						</GridItem>
-						<GridItem className="border-b lg:border-b-0 lg:border-r">
-							<h4>Strength</h4>
-							<p>Have a wide patience</p>
-						</GridItem>
-						<GridItem className="border-b md:border-b-0 md:border-r lg:border-r-0">
-							<h4>Abilities</h4>
-							<p>Multitask, Communicate Well, Can blend to a group</p>
-						</GridItem>
-						<GridItem className="lg:border-l">
-							<h4>Weakness</h4>
-							{/* <p>Can distract easily</p> */}
-							<p>Lambing & Kiss</p>
-						</GridItem>
+						{gridItems.map((item, index) => (
+							<GridItem
+								key={index}
+								className={item.className}
+							>
+								<h4>{item.title}</h4>
+								<p>{item.content}</p>
+							</GridItem>
+						))}
 					</div>
 				</div>
 			</Section>
 			<Lamp />
-			{/* <div className="mt-12">
-			</div> */}
 		</>
 	)
 }
