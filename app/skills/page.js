@@ -6,6 +6,7 @@ import { Highlights } from "@/components/shared/skills/highlights"
 import HeroCard from "@/components/shared/skills/hero-card"
 import LabCard from "@/components/shared/skills/lab-card"
 import GameStats from "@/components/shared/skills/stats"
+import Subheader from "@/components/shared/skills/subheader"
 
 function SkillsPage() {
 	const labCards = [
@@ -54,7 +55,7 @@ function SkillsPage() {
 		<Section className="relative">
 			<h1 className="mb-4 text-center">Skills</h1>
 			<div>
-				<h2 className="text-center">My works from ITWST02</h2>
+				<Subheader className="text-center">My works from ITWST02</Subheader>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-8">
 					{labCards.map((lab, index) => (
 						<LabCard
@@ -71,7 +72,7 @@ function SkillsPage() {
 				<GameStats />
 			</div>
 			<div className="my-20">
-				<h2 className="text-center">My Favorite Heroes</h2>
+				<Subheader className="text-center">My Favorite Heroes</Subheader>
 				<div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mt-12">
 					{heroCards.map((hero, index) => (
 						<HeroCard
@@ -83,7 +84,7 @@ function SkillsPage() {
 				</div>
 			</div>
 			<div className="my-20">
-				<h2 className="text-center">Highlights</h2>
+				<Subheader className="text-center">Highlights</Subheader>
 				<Highlights />
 			</div>
 		</Section>

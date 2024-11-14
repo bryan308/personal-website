@@ -1,12 +1,12 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { Trophy, Flame, Gamepad } from "lucide-react"
 import { useEffect, useState } from "react"
 
 import { Card, CardContent } from "@/components/ui/card"
 
-const StatCard = ({ title, value, icon }) => {
+const StatCard = ({ title, value, icon, delay }) => {
 	const [count, setCount] = useState(0)
 
 	useEffect(() => {
@@ -21,10 +21,16 @@ const StatCard = ({ title, value, icon }) => {
 
 	return (
 		<motion.div
-			initial={{ opacity: 0, y: -20 }}
+			initial={{ opacity: 0, y: -40 }}
 			whileInView={{ opacity: 1, y: 0 }}
-			viewport={{ once: true }}
-			transition={{ duration: 0.5 }}
+			viewport={{ amount: 0.8 }}
+			transition={{
+				delay: delay,
+				duration: 0.8,
+				ease: "easeInOut",
+				repeat: 0,
+				reapetType: "loop",
+			}}
 		>
 			<Card className="border-primary">
 				<CardContent className="p-6">
@@ -40,32 +46,32 @@ const StatCard = ({ title, value, icon }) => {
 }
 
 export default function GameStats() {
+	const stats = [
+		{ title: "Total Games", value: 9941, icon: <Gamepad className="h-6 w-6 text-primary" /> },
+		{ title: "MVP's", value: 1584, icon: <Trophy className="h-6 w-6 text-yellow-400" /> },
+		{ title: "Winstreak", value: 15, icon: <Flame className="h-6 w-6 text-red-500" /> },
+	]
+
 	return (
 		<div className="w-full max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
 			<motion.h2
 				className="text-center mb-12"
-				initial={{ opacity: 0, y: -20 }}
+				initial={{ opacity: 0, y: -40 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.5 }}
 			>
 				Statistics of My Game
 			</motion.h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-				<StatCard
-					title="Total Games"
-					value={9941}
-					icon={<Gamepad className="h-6 w-6 text-primary" />}
-				/>
-				<StatCard
-					title="MVP's"
-					value={1584}
-					icon={<Trophy className="h-6 w-6 text-yellow-400" />}
-				/>
-				<StatCard
-					title="Winstreak"
-					value={15}
-					icon={<Flame className="h-6 w-6 text-red-500" />}
-				/>
+				{stats.map((stat, index) => (
+					<StatCard
+						key={index}
+						title={stat.title}
+						value={stat.value}
+						icon={stat.icon}
+						delay={index * 0.2}
+					/>
+				))}
 			</div>
 		</div>
 	)
