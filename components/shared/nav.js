@@ -36,7 +36,7 @@ export default function FloatingNav() {
 
 	return (
 		<nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-xl transition-opacity duration-300">
-			<div className="bg-gradient-to-t from-primary/15 to-primary/5 backdrop-blur-md rounded-xl shadow border border-foreground/20">
+			<div className="bg-gradient-to-t from-primary/35 via-primary/25 to-primary/25 backdrop-blur-md rounded-xl shadow border border-foreground/20">
 				<div className="container mx-auto px-2 py-2">
 					<div className="flex items-center justify-between">
 						<Link
@@ -76,7 +76,7 @@ export default function FloatingNav() {
 			{isMobileMenuOpen && (
 				<div
 					ref={menuRef}
-					className="w-fit ml-auto sm:hidden mt-2 bg-gradient-to-t from-primary/15 to-primary/5 backdrop-blur-md rounded-xl shadow border border-foreground/20 overflow-hidden"
+					className="w-fit ml-auto sm:hidden mt-2 bg-gradient-to-t from-primary/45 via-primary/35 to-primary/25 backdrop-blur-md rounded-xl shadow border border-foreground/20 overflow-hidden"
 				>
 					<div className="flex flex-col items-start space-y-2 pr-12 p-4 text-lg">
 						<NavLink
