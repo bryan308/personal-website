@@ -19,25 +19,25 @@ function SkillsPage() {
 		{
 			title: "Laboratory 2",
 			description:
-				"Developed a responsive web page with interactive elements using JavaScript and CSS.",
+				"I create a form that will get a personal infomation from the user and store it in a database using HTML and CSS",
 			image: "/images/laboratories/lab2.png",
 		},
 		{
 			title: "Laboratory 3",
 			description:
-				"Developed a responsive web page with interactive elements using JavaScript and CSS.",
+				"I developed a audio player with controls and design it using CSS , I make sure that the audio player is playable in any browser and  responsive even in smartphones.",
 			image: "/images/laboratories/lab3.png",
 		},
 		{
 			title: "Laboratory 4",
 			description:
-				"Developed a responsive web page with interactive elements using JavaScript and CSS.",
+				"I developed a video player with controls and design it using CSS , I make sure that the video player is playable in any browser and  responsive even in smartphones",
 			image: "/images/laboratories/lab4.png",
 		},
 		{
 			title: "Laboratory 5",
 			description:
-				"Developed a responsive web page with interactive elements using JavaScript and CSS.",
+				"Last Laboratory for first Sem Midterm, This is use to calculate the area of a circle by giving the radius entered by the user.",
 			image: "/images/laboratories/lab5.png",
 		},
 	]
