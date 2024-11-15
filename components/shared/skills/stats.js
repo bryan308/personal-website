@@ -32,7 +32,7 @@ const StatCard = ({ title, value, icon, delay }) => {
 				reapetType: "loop",
 			}}
 		>
-			<Card className="border-none bg-transparent rounded-none">
+			<Card className="border-none bg-transparent shadow-none rounded-none">
 				<CardContent className="p-0">
 					<p className="text-3xl font-bold text-center">{count.toLocaleString()}</p>
 					<div className="flex items-center justify-center mt-2">

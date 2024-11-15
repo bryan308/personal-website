@@ -13,31 +13,31 @@ function SkillsPage() {
 		{
 			title: "Laboratory 1",
 			description:
-				"I create a student directory table to display information about students using HTML tables and apply basic styling using CSS",
+				"I created a student directory table to display information about students using HTML tables and applied basic styling using CSS.",
 			image: "/images/laboratories/lab1.png",
 		},
 		{
 			title: "Laboratory 2",
 			description:
-				"I create a form that will get a personal infomation from the user and store it in a database using HTML and CSS",
+				"I created a form that collects personal information from the user and stores it in a database using HTML and CSS.",
 			image: "/images/laboratories/lab2.png",
 		},
 		{
 			title: "Laboratory 3",
 			description:
-				"I developed a audio player with controls and design it using CSS , I make sure that the audio player is playable in any browser and  responsive even in smartphones.",
+				"I developed an audio player with controls and designed it using CSS. I ensured that the audio player is playable in any browser and responsive on smartphones.",
 			image: "/images/laboratories/lab3.png",
 		},
 		{
 			title: "Laboratory 4",
 			description:
-				"I developed a video player with controls and design it using CSS , I make sure that the video player is playable in any browser and  responsive even in smartphones",
+				"I developed a video player with controls and designed it using CSS. I ensured that the video player is playable in any browser and responsive on smartphones.",
 			image: "/images/laboratories/lab4.png",
 		},
 		{
 			title: "Laboratory 5",
 			description:
-				"Last Laboratory for first Sem Midterm, This is use to calculate the area of a circle by giving the radius entered by the user.",
+				"The last laboratory for the first semester midterm, this is used to calculate the area of a circle by entering the radius provided by the user.",
 			image: "/images/laboratories/lab5.png",
 		},
 	]
@@ -74,7 +74,7 @@ function SkillsPage() {
 			<div className="my-40">
 				<GameStats />
 			</div>
-			<div className="my-40">
+			<div className="my-20 md:my-40">
 				<Subheader className="text-center">My Favorite Heroes</Subheader>
 				<div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mt-12">
 					{heroCards.map((hero, index) => (
@@ -86,7 +86,7 @@ function SkillsPage() {
 					))}
 				</div>
 			</div>
-			<div className="py-40">
+			<div className="pt-20 md:pt-40 pb-40 md:pb-20">
 				<Subheader className="text-center">Highlights</Subheader>
 				<Highlights />
 			</div>

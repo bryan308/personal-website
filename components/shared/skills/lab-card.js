@@ -18,7 +18,7 @@ const LabCard = ({ title, image = "/images/sample.png", description, className, 
 					height={1016}
 				/>
 			</div>
-			<div className="p-4">
+			<div className="py-4">
 				<h4>{title}</h4>
 				<p>{description}</p>
 			</div>
