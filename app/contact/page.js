@@ -1,5 +1,5 @@
 import Section from "@/components/shared/section"
-import { Form } from "@/components/ui/form"
+import { Form } from "@/components/shared/contact/form"
 import React from "react"
 
 function ContactPage() {

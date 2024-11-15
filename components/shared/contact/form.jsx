@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label"
 
 export function Form() {
 	return (
-		<Card className="mt-12 mx-auto max-w-md bg-transparent">
+		<Card className="mt-12 mx-auto max-w-md bg-background border-none">
 			{/* <CardHeader>
 				<CardTitle className="text-2xl">Login</CardTitle>
 				<CardDescription>Enter your email below to login to your account</CardDescription>
@@ -16,7 +16,12 @@ export function Form() {
 			<CardContent className="pt-6">
 				<div className="grid gap-4">
 					<div className="grid gap-2">
-						<Label htmlFor="fname">First Name</Label>
+						<Label
+							htmlFor="fname"
+							className="font-header"
+						>
+							First Name
+						</Label>
 						<Input
 							id="fname"
 							type="text"
@@ -24,7 +29,12 @@ export function Form() {
 						/>
 					</div>
 					<div className="grid gap-2">
-						<Label htmlFor="lname">Last Name</Label>
+						<Label
+							htmlFor="lname"
+							className="font-header"
+						>
+							Last Name
+						</Label>
 						<Input
 							id="lname"
 							type="text"
@@ -32,7 +42,12 @@ export function Form() {
 						/>
 					</div>
 					<div className="grid gap-2">
-						<Label htmlFor="email">Email</Label>
+						<Label
+							htmlFor="email"
+							className="font-header"
+						>
+							Email
+						</Label>
 						<Input
 							id="email"
 							type="text"
@@ -40,7 +55,12 @@ export function Form() {
 						/>
 					</div>
 					<div className="grid gap-2">
-						<Label htmlFor="message">Feedback or Message</Label>
+						<Label
+							htmlFor="message"
+							className="font-header"
+						>
+							Feedback or Message
+						</Label>
 						<Textarea
 							id="message"
 							placeholder="Enter you message here"
