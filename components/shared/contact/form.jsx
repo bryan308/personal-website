@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label"
 
 export function Form() {
 	return (
-		<Card className="mt-12 mx-auto max-w-md bg-background border-none">
+		<Card className="mt-12 mx-auto max-w-md bg-transparent border-none">
 			{/* <CardHeader>
 				<CardTitle className="text-2xl">Login</CardTitle>
 				<CardDescription>Enter your email below to login to your account</CardDescription>
@@ -64,6 +64,7 @@ export function Form() {
 						<Textarea
 							id="message"
 							placeholder="Enter you message here"
+							
 						/>
 					</div>
 					<Button
