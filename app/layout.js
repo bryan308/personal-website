@@ -28,8 +28,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={cn("antialiased", montserrat.className, header.variable)}>
+			<body className={cn("relative antialiased", montserrat.className, header.variable)}>
 				<Providers>
+					<div
+						className="absolute top-0 inset-0 -z-10 opacity-5"
+						style={{
+							backgroundImage: "url('/images/noise.png')",
+							backgroundRepeat: "repeat",
+						}}
+					/>
 					<FloatingNav />
 					{children}
 				</Providers>

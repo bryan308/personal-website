@@ -83,7 +83,7 @@ function SkillsPage() {
 					))}
 				</div>
 			</div>
-			<div className="my-20">
+			<div className="py-20">
 				<Subheader className="text-center">Highlights</Subheader>
 				<Highlights />
 			</div>
