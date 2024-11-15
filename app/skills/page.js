@@ -1,7 +1,7 @@
 import React from "react"
 
 import Section from "@/components/shared/section"
-import GradientMockup from "@/components/ui/gradient-mockup"
+import GradientMockup from "@/components/shared/about/gradient-mockup"
 import { Highlights } from "@/components/shared/skills/highlights"
 import HeroCard from "@/components/shared/skills/hero-card"
 import LabCard from "@/components/shared/skills/lab-card"
@@ -56,7 +56,7 @@ function SkillsPage() {
 			<h1 className="mb-4 text-center">Skills</h1>
 			<div>
 				<Subheader className="text-center">My works from ITWST02</Subheader>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 place-items-center mt-8">
 					{labCards.map((lab, index) => (
 						<LabCard
 							key={index}
@@ -67,11 +67,14 @@ function SkillsPage() {
 					))}
 				</div>
 			</div>
-			<GradientMockup src="/images/noisy-grad2.jpg" />
-			<div className="my-20">
+			<GradientMockup
+				className="my-40"
+				src="/images/noisy-grad2.jpg"
+			/>
+			<div className="my-40">
 				<GameStats />
 			</div>
-			<div className="my-20">
+			<div className="my-40">
 				<Subheader className="text-center">My Favorite Heroes</Subheader>
 				<div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mt-12">
 					{heroCards.map((hero, index) => (
@@ -83,7 +86,7 @@ function SkillsPage() {
 					))}
 				</div>
 			</div>
-			<div className="py-20">
+			<div className="py-40">
 				<Subheader className="text-center">Highlights</Subheader>
 				<Highlights />
 			</div>
@@ -95,5 +98,6 @@ export default SkillsPage
 
 export const metadata = {
 	title: "Skills",
-	description: "",
+	description:
+		"Explore my skills and projects, including laboratory works, favorite heroes, and highlights.",
 }

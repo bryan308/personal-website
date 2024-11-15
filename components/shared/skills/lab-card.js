@@ -5,7 +5,7 @@ const LabCard = ({ title, image = "/images/sample.png", description, className, 
 	return (
 		<div
 			className={cn(
-				"flex flex-col justify-start items-start max-w-lg h-full rounded-xl overflow-hidden",
+				"flex flex-col justify-between items-start max-w-sm h-full rounded-xl overflow-hidden",
 				className
 			)}
 			{...props}

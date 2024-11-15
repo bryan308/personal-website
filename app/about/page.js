@@ -1,9 +1,10 @@
-import GradientMockup from "@/components/ui/gradient-mockup"
+import React from "react"
+
+import Image from "next/image"
+import GradientMockup from "@/components/shared/about/gradient-mockup"
+import GridItem from "@/components/shared/about/grid-item"
 import Section from "@/components/shared/section"
 import { Lamp } from "@/components/shared/about/lamp"
-import { cn } from "@/lib/utils"
-import Image from "next/image"
-import React from "react"
 
 function AboutPage() {
 	const gridItems = [
@@ -81,17 +82,4 @@ export default AboutPage
 export const metadata = {
 	title: "About Me",
 	description: "How are you interested in me?",
-}
-
-const GridItem = ({ className, children }) => {
-	return (
-		<div
-			className={cn(
-				"h-[200px] w-auto flex items-center justify-center flex-col border-primary/30 text-center p-4",
-				className
-			)}
-		>
-			{children}
-		</div>
-	)
 }

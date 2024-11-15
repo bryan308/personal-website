@@ -32,12 +32,12 @@ const StatCard = ({ title, value, icon, delay }) => {
 				reapetType: "loop",
 			}}
 		>
-			<Card className="border-primary">
-				<CardContent className="p-6">
+			<Card className="border-none bg-transparent rounded-none">
+				<CardContent className="p-0">
 					<p className="text-3xl font-bold text-center">{count.toLocaleString()}</p>
 					<div className="flex items-center justify-center mt-2">
 						<div className="mr-3">{icon}</div>
-						<h3 className="text-lg font-semibold">{title}</h3>
+						<h4 className="text-lg font-semibold">{title}</h4>
 					</div>
 				</CardContent>
 			</Card>
@@ -48,12 +48,12 @@ const StatCard = ({ title, value, icon, delay }) => {
 export default function GameStats() {
 	const stats = [
 		{ title: "Total Games", value: 9941, icon: <Gamepad className="h-6 w-6 text-primary" /> },
-		{ title: "MVP's", value: 1584, icon: <Trophy className="h-6 w-6 text-yellow-400" /> },
+		{ title: "MVP’s", value: 1584, icon: <Trophy className="h-6 w-6 text-yellow-400" /> },
 		{ title: "Winstreak", value: 15, icon: <Flame className="h-6 w-6 text-red-500" /> },
 	]
 
 	return (
-		<div className="w-full max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+		<div className="">
 			<motion.h2
 				className="text-center mb-12"
 				initial={{ opacity: 0, y: -40 }}

@@ -5,6 +5,7 @@ import "./globals.css"
 import Providers from "@/components/shared/theme-provider"
 import FloatingNav from "@/components/shared/nav"
 import { cn } from "@/lib/utils"
+// import LenisProvider from "@/components/shared/lenis-provider"
 
 // for page titles and headers
 const header = Bricolage_Grotesque({
@@ -29,17 +30,19 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={cn("relative antialiased", montserrat.className, header.variable)}>
-				<Providers>
-					<div
-						className="absolute top-0 inset-0 -z-10 opacity-5"
-						style={{
-							backgroundImage: "url('/images/noise.png')",
-							backgroundRepeat: "repeat",
-						}}
-					/>
-					<FloatingNav />
-					{children}
-				</Providers>
+				{/* <LenisProvider> */}
+					<Providers>
+						<div
+							className="absolute top-0 inset-0 -z-10 opacity-5"
+							style={{
+								backgroundImage: "url('/images/noise.png')",
+								backgroundRepeat: "repeat",
+							}}
+						/>
+						<FloatingNav />
+						{children}
+					</Providers>
+				{/* </LenisProvider> */}
 			</body>
 		</html>
 	)
