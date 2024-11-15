@@ -6,7 +6,7 @@ import { Highlights } from "@/components/shared/skills/highlights"
 import HeroCard from "@/components/shared/skills/hero-card"
 import LabCard from "@/components/shared/skills/lab-card"
 import GameStats from "@/components/shared/skills/stats"
-import Subheader from "@/components/shared/skills/subheader"
+import Subheader from "@/components/ui/subheader"
 
 function SkillsPage() {
 	const labCards = [

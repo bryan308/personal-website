@@ -8,11 +8,7 @@ import { Label } from "@/components/ui/label"
 
 export function Form() {
 	return (
-		<Card className="mt-12 mx-auto max-w-md bg-transparent border-none">
-			{/* <CardHeader>
-				<CardTitle className="text-2xl">Login</CardTitle>
-				<CardDescription>Enter your email below to login to your account</CardDescription>
-			</CardHeader> */}
+		<Card className="mt-12 mx-auto max-w-md bg-transparent border-none shadow-none">
 			<CardContent className="pt-6">
 				<div className="grid gap-4">
 					<div className="grid gap-2">
@@ -64,7 +60,6 @@ export function Form() {
 						<Textarea
 							id="message"
 							placeholder="Enter you message here"
-							
 						/>
 					</div>
 					<Button

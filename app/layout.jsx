@@ -5,6 +5,7 @@ import "./globals.css"
 import Providers from "@/components/shared/theme-provider"
 import FloatingNav from "@/components/shared/nav"
 import { cn } from "@/lib/utils"
+import { Footer } from "@/components/ui/footer"
 // import LenisProvider from "@/components/shared/lenis-provider"
 
 // for page titles and headers
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
 						/>
 						<FloatingNav />
 						{children}
+						<Footer />
 					</Providers>
 				{/* </LenisProvider> */}
 			</body>
