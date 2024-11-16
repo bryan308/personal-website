@@ -7,6 +7,7 @@ import HeroCard from "@/components/shared/skills/hero-card"
 import LabCard from "@/components/shared/skills/lab-card"
 import GameStats from "@/components/shared/skills/stats"
 import Subheader from "@/components/ui/subheader"
+import Header from "@/components/ui/page-header"
 
 function SkillsPage() {
 	const labCards = [
@@ -53,9 +54,14 @@ function SkillsPage() {
 
 	return (
 		<Section className="relative">
-			<h1 className="mb-4 text-center">Skills</h1>
+			<Header>Skills</Header>
 			<div>
-				<Subheader className="text-center">My works from ITWST02</Subheader>
+				<Subheader
+					delay={0.25}
+					className="text-center"
+				>
+					My works from ITWST02
+				</Subheader>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 place-items-center mt-8">
 					{labCards.map((lab, index) => (
 						<LabCard
@@ -72,6 +78,7 @@ function SkillsPage() {
 				src="/images/noisy-grad2.jpg"
 			/>
 			<div className="my-40">
+				<Subheader className="text-center">Statistics of My Game</Subheader>
 				<GameStats />
 			</div>
 			<div className="my-20 md:my-40">

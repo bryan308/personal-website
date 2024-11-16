@@ -53,16 +53,8 @@ export default function GameStats() {
 	]
 
 	return (
-		<div className="">
-			<motion.h2
-				className="text-center mb-12"
-				initial={{ opacity: 0, y: -40 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.5 }}
-			>
-				Statistics of My Game
-			</motion.h2>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+		<div>
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 				{stats.map((stat, index) => (
 					<StatCard
 						key={index}

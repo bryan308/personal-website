@@ -4,6 +4,7 @@ import React from "react"
 import Subheader from "@/components/ui/subheader"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Header from "@/components/ui/page-header"
 
 function ContactPage() {
 	const socialMedia = [
@@ -45,7 +46,7 @@ function ContactPage() {
 		<>
 			<Section>
 				<div className="mb-20 md:mb-40">
-					<h1 className="text-center">Contact Me</h1>
+					<Header>Contact Me</Header>
 					<Form />
 				</div>
 				<div className="my-20 md:my-40">

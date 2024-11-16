@@ -5,6 +5,8 @@ import GradientMockup from "@/components/shared/about/gradient-mockup"
 import GridItem from "@/components/shared/about/grid-item"
 import Section from "@/components/shared/section"
 import { Lamp } from "@/components/shared/about/lamp"
+import Header from "@/components/ui/page-header"
+import Subheader from "@/components/ui/subheader"
 
 function AboutPage() {
 	const gridItems = [
@@ -31,12 +33,12 @@ function AboutPage() {
 	return (
 		<>
 			<Section>
-				<h1 className="text-center">About Me</h1>
+				<Header>About Me</Header>
 				<div className="flex flex-col-reverse lg:flex-row gap-8 mt-12">
 					<div className="mt-4 lg:mt-0">
-						<h2 className="font-semibold text-center lg:text-left mb-4">
+						<Subheader delay={0.25} className="font-semibold text-center lg:text-left mb-4">
 							How are you interested in me?
-						</h2>
+						</Subheader>
 						<p className="max-w-prose">
 							I’m currently a college student pursuing I.T. I’m a tech guy, but not that good at
 							programming but I am doing my best.
