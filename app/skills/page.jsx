@@ -69,6 +69,7 @@ function SkillsPage() {
 							title={lab.title}
 							description={lab.description}
 							image={lab.image}
+							delay={index * 0.25}
 						/>
 					))}
 				</div>
@@ -89,6 +90,7 @@ function SkillsPage() {
 							key={index}
 							heroName={hero.heroName}
 							image={hero.image}
+							delay={index * 0.25}
 						/>
 					))}
 				</div>

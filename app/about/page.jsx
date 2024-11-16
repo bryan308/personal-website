@@ -1,12 +1,13 @@
 import React from "react"
 
-import Image from "next/image"
 import GradientMockup from "@/components/shared/about/gradient-mockup"
 import GridItem from "@/components/shared/about/grid-item"
 import Section from "@/components/shared/section"
 import { Lamp } from "@/components/shared/about/lamp"
 import Header from "@/components/ui/page-header"
 import Subheader from "@/components/ui/subheader"
+import { Paragraph } from "@/components/shared/about/paragraph"
+import { Profile } from "@/components/shared/about/profile"
 
 function AboutPage() {
 	const gridItems = [
@@ -36,40 +37,38 @@ function AboutPage() {
 				<Header>About Me</Header>
 				<div className="flex flex-col-reverse lg:flex-row gap-8 mt-12">
 					<div className="mt-4 lg:mt-0">
-						<Subheader delay={0.25} className="font-semibold text-center lg:text-left mb-4">
+						<Subheader
+							delay={0.25}
+							className="font-semibold text-center lg:text-left mb-4"
+						>
 							How are you interested in me?
 						</Subheader>
-						<p className="max-w-prose">
+						<Paragraph delay={0.25}>
 							I’m currently a college student pursuing I.T. I’m a tech guy, but not that good at
 							programming but I am doing my best.
-						</p>
-						<p className="max-w-prose mt-4">
+						</Paragraph>
+						<Paragraph
+							className="mt-4"
+							delay={0.5}
+						>
 							Naturally, I love to experience new things and learn them. I have other skills like
 							singing, and primarily I am good at it.
-						</p>
+						</Paragraph>
 					</div>
-					<div className="flex items-center justify-center h-full">
-						<Image
-							src="/images/me.jpg"
-							alt="me"
-							width={384}
-							height={384}
-							className="size-52 lg:size-60 rounded-xl shadow-lg"
-						/>
-					</div>
+					<Profile />
 				</div>
 				<GradientMockup src="/images/noisy-grad1.jpg" />
 				<div className="mt-12">
-					<h2 className="font-semibold text-center">Information</h2>
+					<Subheader className="font-semibold text-center">Information</Subheader>
 					<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
 						{gridItems.map((item, index) => (
 							<GridItem
 								key={index}
+								title={item.title}
+								desc={item.content}
+								delay={index * 0.25}
 								className={item.className}
-							>
-								<h4>{item.title}</h4>
-								<p>{item.content}</p>
-							</GridItem>
+							/>
 						))}
 					</div>
 				</div>

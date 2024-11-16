@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "motion/react"
 import Section from "@/components/shared/section"
 import { Form } from "@/components/shared/contact/form"
 import React from "react"
@@ -47,20 +50,41 @@ function ContactPage() {
 			<Section>
 				<div className="mb-20 md:mb-40">
 					<Header>Contact Me</Header>
-					<Form />
+					<motion.div
+						initial={{ opacity: 0, filter: "blur(6px)" }}
+						whileInView={{ opacity: 1, filter: "blur(0)" }}
+						viewport={{ amount: 0.5, once: false }}
+						transition={{
+							delay: 0.25,
+							duration: 0.8,
+							ease: "easeInOut",
+							repeat: 0,
+							repeatType: "loop",
+						}}
+					>
+						<Form />
+					</motion.div>
 				</div>
 				<div className="my-20 md:my-40">
 					<Subheader className="text-center">You can also visit my social media</Subheader>
 					<div className="mt-6 max-w-md mx-auto grid gap-4">
 						{socialMedia.map((media, index) => (
-							<div
+							<motion.div
+								initial={{ opacity: 0, filter: "blur(6px)" }}
+								whileInView={{ opacity: 1, filter: "blur(0)" }}
+								viewport={{ amount: 0.5, once: false }}
+								transition={{
+									delay: index * 0.25,
+									duration: 0.8,
+									ease: "easeInOut",
+									repeat: 0,
+									repeatType: "loop",
+								}}
 								key={index}
-								className="flex justify-between items-center"
 							>
-								<p className="text-sm">{media.name}</p>
 								<Button
 									variant="outline"
-									className="flex border-primary w-full max-w-xs"
+									className="border-primary flex max-w-xs mx-auto"
 									asChild
 								>
 									<Link
@@ -77,10 +101,10 @@ function ContactPage() {
 											<title>{media.title}</title>
 											<path d={media.iconPath} />
 										</svg>{" "}
-										{media.title}
+										{media.name}
 									</Link>
 								</Button>
-							</div>
+							</motion.div>
 						))}
 					</div>
 				</div>
