@@ -8,6 +8,7 @@ import Subheader from "@/components/ui/subheader"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/ui/page-header"
+import GradientMockup from "@/components/shared/about/gradient-mockup"
 
 function ContactPage() {
 	const socialMedia = [
@@ -65,6 +66,7 @@ function ContactPage() {
 						<Form />
 					</motion.div>
 				</div>
+				<GradientMockup src="/images/noisy-grad3.jpg" />
 				<div className="my-20 md:my-40">
 					<Subheader className="text-center">You can also visit my social media</Subheader>
 					<div className="mt-6 max-w-md mx-auto grid gap-4">

@@ -24,7 +24,7 @@ export const Profile = () => {
 				alt="me"
 				width={384}
 				height={384}
-				className="size-52 lg:size-60 rounded-xl shadow-lg"
+				className="size-52 lg:size-60 rounded-full shadow-lg outline-4 outline outline-primary/20"
 			/>
 		</motion.div>
 	)

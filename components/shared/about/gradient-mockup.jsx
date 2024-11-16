@@ -11,16 +11,17 @@ const GradientMockup = ({
 	alt = "noisy gradient",
 	width = 1100,
 	height = 554,
+	delay = 0,
 	...props
 }) => {
 	return (
 		<motion.div
-			initial={{ opacity: 0, filter: "blur(12px)" }}
+			initial={{ opacity: 0, filter: "blur(4px)" }}
 			whileInView={{ opacity: 1, filter: "blur(0)" }}
 			viewport={{ amount: 0.5, once: false }}
 			transition={{
-				// delay: delay,
-				duration: 0.5,
+				delay: delay,
+				duration: 0.25,
 				ease: "easeInOut",
 				repeat: 0,
 				repeatType: "loop",

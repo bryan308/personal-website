@@ -48,7 +48,7 @@ export default function Home() {
 						className="flex flex-col items-center"
 					>
 						<Image
-							className="size-52 lg:size-60 rounded-full"
+							className="size-52 lg:size-60 rounded-full outline-4 outline outline-primary/20"
 							src="/images/me.jpg"
 							alt="picture of me"
 							width={384}

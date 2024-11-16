@@ -11,7 +11,7 @@ import { Profile } from "@/components/shared/about/profile"
 
 function AboutPage() {
 	const gridItems = [
-		{ title: "Location", content: "Santa Rosa N. E.", className: "md:border-r border-b" },
+		{ title: "Location", content: "Santa Rosa Nueva Ecija", className: "md:border-r border-b" },
 		{ title: "Email", content: "rainielsevilla27@gmail.com", className: "border-b" },
 		{
 			title: "Contact",
@@ -25,7 +25,7 @@ function AboutPage() {
 		},
 		{
 			title: "Abilities",
-			content: "Multitask, Communicate Well, Can blend to a group",
+			content: "Multitask, Communicate well, can blend to a group",
 			className: "border-b md:border-b-0 md:border-r lg:border-r-0",
 		},
 		{ title: "Weakness", content: "Can distract easily", className: "lg:border-l" },
@@ -57,7 +57,7 @@ function AboutPage() {
 					</div>
 					<Profile />
 				</div>
-				<GradientMockup src="/images/noisy-grad1.jpg" />
+				<GradientMockup delay={1} src="/images/noisy-grad1.jpg" />
 				<div className="mt-12">
 					<Subheader className="font-semibold text-center">Information</Subheader>
 					<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
