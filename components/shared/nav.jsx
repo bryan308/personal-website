@@ -8,6 +8,8 @@ import { ModeToggle } from "./toggle-theme"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
+import logo from "@/public/images/logo.png"
+
 export default function FloatingNav() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 	const menuRef = useRef(null)
@@ -46,9 +48,9 @@ export default function FloatingNav() {
 		<nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-xl transition-opacity duration-300">
 			<div
 				className={cn(
-					"backdrop-saturate-0 backdrop-blur",
-					"bg-gradient-to-t from-primary/65 via-primary/45 to-primary/45",
-					"rounded-xl shadow border border-foreground/20"
+					"backdrop-saturate-[30] backdrop-blur-[24px]",
+					"bg-white/80 dark:bg-[#0a0a0a]/80",
+					"rounded-full shadow border border-foreground/20"
 				)}
 			>
 				<div className="container mx-auto px-2 py-2">
@@ -58,9 +60,8 @@ export default function FloatingNav() {
 							className="text-2xl font-bold text-foreground"
 						>
 							<Image
-								className="mx-2 grayscale brightness-0 dark:brightness-100 dark:grayscale-0"
-								// className="mx-2 grayscale invert dark:invert-0"
-								src="/images/logo.png"
+								className="mx-2"
+								src={logo}
 								alt="logo"
 								width={32}
 								height={32}
@@ -95,7 +96,7 @@ export default function FloatingNav() {
 			{isMobileMenuOpen && (
 				<div
 					ref={menuRef}
-					className="w-fit ml-auto sm:hidden mt-2 bg-gradient-to-t from-primary/65 via-primary/45 to-primary/45 backdrop-blur-md rounded-xl shadow border border-foreground/20 overflow-hidden"
+					className="w-fit ml-auto sm:hidden mt-2 bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-saturate-[30] backdrop-blur-[24px] rounded-xl shadow border border-foreground/20 overflow-hidden"
 				>
 					<div className="flex flex-col items-start space-y-2 pr-12 p-4 text-lg">
 						{navLinks.map((link) => (
