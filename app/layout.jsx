@@ -21,16 +21,35 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-	title: "Rainiel Sevilla",
+	title: {
+		template: "%s | Rainiel Sevilla",
+		default: "Rainiel Sevilla",
+	},
 	description:
 		"I continually enhance my talents and abilities through diverse experiences, developing a unique perspective and skill set.",
 	openGraph: {
 		title: "Rainiel Sevilla",
 		description:
 			"I continually enhance my talents and abilities through diverse experiences, developing a unique perspective and skill set.",
-		type: "website",
 		url: "https://rainiel-sevilla.vercel.app",
-		image: "/images/og.jpg",
+		siteName: "Rainiel Sevilla",
+		images: [
+			{
+				url: "https://rainiel-sevilla.vercel.app/og.png",
+				width: 1600,
+				height: 800,
+				alt: "Rainiel Sevilla",
+			},
+		],
+		locale: "en_US",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Rainiel Sevilla",
+		description:
+			"I continually enhance my talents and abilities through diverse experiences, developing a unique perspective and skill set.",
+		images: ["https://rainiel-sevilla.vercel.app/og.png"],
 	},
 }
 

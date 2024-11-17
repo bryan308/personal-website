@@ -58,6 +58,7 @@ export default function FloatingNav() {
 						<Link
 							href="/"
 							className="text-2xl font-bold text-foreground"
+							onClick={toggleMobileMenu}
 						>
 							<Image
 								className="mx-2"

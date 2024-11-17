@@ -44,12 +44,12 @@ function SkillsPage() {
 	]
 
 	const heroCards = [
-		{ heroName: "Hanabi", image: "/images/heroes/hanabi.jpg" },
-		{ heroName: "Cyclops", image: "/images/heroes/cyclops.jpg" },
-		{ heroName: "Bruno", image: "/images/heroes/bruno.jpg" },
-		{ heroName: "Gusion", image: "/images/heroes/gusion.jpg" },
-		{ heroName: "Guinevere", image: "/images/heroes/guinevere.jpg" },
-		{ heroName: "Chou", image: "/images/heroes/chou.jpg" },
+		{ heroName: "Hanabi", image: "hanabi.jpg" },
+		{ heroName: "Cyclops", image: "cyclops.jpg" },
+		{ heroName: "Bruno", image: "bruno.jpg" },
+		{ heroName: "Gusion", image: "gusion.jpg" },
+		{ heroName: "Guinevere", image: "guinevere.jpg" },
+		{ heroName: "Chou", image: "chou.jpg" },
 	]
 
 	return (
@@ -89,13 +89,13 @@ function SkillsPage() {
 						<HeroCard
 							key={index}
 							heroName={hero.heroName}
-							image={hero.image}
+							image={`/images/heroes/${hero.image}`}
 							delay={index * 0.25}
 						/>
 					))}
 				</div>
 			</div>
-			<div className="pt-20 md:pt-40 pb-40 md:pb-20">
+			<div className="pt-20 pb-40 md:pb-20">
 				<Subheader className="text-center">Highlights</Subheader>
 				<Highlights />
 			</div>

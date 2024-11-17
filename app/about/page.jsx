@@ -51,7 +51,7 @@ function AboutPage() {
 							className="mt-4"
 							delay={0.5}
 						>
-							Naturally, I love to experience new things and learn them. I have other skills like
+							Naturally, I love to experience new things and learn them. I have other talent like
 							singing, and primarily I am good at it.
 						</Paragraph>
 					</div>
