@@ -1,14 +1,16 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { useState, useEffect, useRef } from "react"
-import { Menu, X } from "lucide-react"
+import { usePathname } from "next/navigation"
 
+import { Menu, X } from "lucide-react"
+import logo from "@/public/images/logo.png"
+
+import Image from "next/image"
 import Link from "next/link"
 import { ModeToggle } from "./toggle-theme"
-import Image from "next/image"
-import { cn } from "@/lib/utils"
-
-import logo from "@/public/images/logo.png"
+import { Button } from "../ui/button"
 
 export default function FloatingNav() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -30,7 +32,6 @@ export default function FloatingNav() {
 			}, 300)
 		}
 	}
-
 	useEffect(() => {
 		if (isMobileMenuOpen && menuRef.current) {
 			menuRef.current.style.animation = "slideDown 0.3s ease-out forwards"
@@ -53,23 +54,26 @@ export default function FloatingNav() {
 					"rounded-full shadow border border-foreground/20"
 				)}
 			>
-				<div className="container mx-auto px-2 py-2">
+				<div className="container mx-auto px-3 py-2">
 					<div className="flex items-center justify-between">
-						<Link
-							href="/"
-							className="text-2xl font-bold text-foreground"
-							onClick={toggleMobileMenu}
+						<Button
+							className="text-2xl font-bold rounded-full size-8 p-0"
+							variant="link"
+							onClick={closeMobileMenu}
+							asChild
 						>
-							<Image
-								className="mx-2"
-								src={logo}
-								alt="logo"
-								width={32}
-								height={32}
-								priority
-								quality={100}
-							/>
-						</Link>
+							<Link href="/">
+								<Image
+									// className="mx-2"
+									src={logo}
+									alt="logo"
+									width={32}
+									height={32}
+									priority
+									quality={100}
+								/>
+							</Link>
+						</Button>
 						<div className="hidden sm:flex items-center gap-4">
 							{navLinks.map((link) => (
 								<NavLink
@@ -97,13 +101,14 @@ export default function FloatingNav() {
 			{isMobileMenuOpen && (
 				<div
 					ref={menuRef}
-					className="w-fit ml-auto sm:hidden mt-2 bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-saturate-[30] backdrop-blur-[24px] rounded-xl shadow border border-foreground/20 overflow-hidden"
+					className="w-full sm:hidden mt-4 bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-saturate-[30] backdrop-blur-[24px] rounded-3xl shadow border border-foreground/20 overflow-hidden"
 				>
-					<div className="flex flex-col items-start space-y-2 pr-12 p-4 text-lg">
+					<div className="flex flex-col items-center text-center space-y-4 p-4 text-xl">
 						{navLinks.map((link) => (
 							<NavLink
 								key={link.href}
 								href={link.href}
+								className="w-full"
 								onClick={closeMobileMenu}
 							>
 								{link.label}
@@ -117,11 +122,23 @@ export default function FloatingNav() {
 	)
 }
 
-function NavLink({ href, children, onClick }) {
+function NavLink({ href, children, onClick, className }) {
+	const pathname = usePathname()
+
+	function currentPath() {
+		let style = "text-foreground"
+
+		if (pathname === href) {
+			style = "text-primary"
+		}
+
+		return style
+	}
+
 	return (
 		<Link
 			href={href}
-			className="text-foreground hover:text-foreground/90 transition-colors lowercase"
+			className={cn("hover:text-primary/90 transition-colors lowercase", currentPath(), className)}
 			onClick={onClick}
 		>
 			{children}
