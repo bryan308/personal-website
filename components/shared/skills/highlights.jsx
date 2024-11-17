@@ -18,6 +18,8 @@ export const Highlights = () => {
 			}}
 			autoPlay
 			loop
+			controls
+			muted
 			className="rounded-xl mt-12 outline-8 outline outline-primary/20"
 			preload="auto"
 		>
