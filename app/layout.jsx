@@ -35,7 +35,7 @@ export const metadata = {
 		siteName: "Rainiel Sevilla",
 		images: [
 			{
-				url: "https://rainiel-sevilla.vercel.app/og.png",
+				url: "https://rainiel-sevilla.vercel.app/images/og.png",
 				width: 1600,
 				height: 800,
 				alt: "Rainiel Sevilla",
@@ -49,7 +49,7 @@ export const metadata = {
 		title: "Rainiel Sevilla",
 		description:
 			"I continually enhance my talents and abilities through diverse experiences, developing a unique perspective and skill set.",
-		images: ["https://rainiel-sevilla.vercel.app/og.png"],
+		images: ["https://rainiel-sevilla.vercel.app/images/og.png"],
 	},
 }
 
