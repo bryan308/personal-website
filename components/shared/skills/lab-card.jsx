@@ -25,7 +25,7 @@ const LabCard = ({
 				repeatType: "loop",
 			}}
 			className={cn(
-				"flex flex-col justify-between items-start max-w-sm h-full rounded-xl overflow-hidden",
+				"flex flex-col justify-between items-start max-w-sm h-full",
 				className
 			)}
 			{...props}
@@ -36,6 +36,7 @@ const LabCard = ({
 					alt={title}
 					width={1800}
 					height={1016}
+					className="rounded-xl outline-4 outline outline-primary/20"
 				/>
 			</div>
 			<div className="py-4">
