@@ -21,7 +21,7 @@ const Section = ({ children, className, ...props }) => {
 		<section
 			ref={container}
 			aria-label="section"
-			className={cn("max-w-5xl mx-auto min-h-screen px-6 md:px-0 pt-24", className)}
+			className={cn("max-w-5xl mx-auto min-h-screen px-6 lg:px-0 pt-24", className)}
 			{...props}
 		>
 			{children}

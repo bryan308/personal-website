@@ -62,7 +62,7 @@ function SkillsPage() {
 				>
 					My works from ITWST02
 				</Subheader>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 place-items-center mt-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center mt-8">
 					{labCards.map((lab, index) => (
 						<LabCard
 							key={index}
