@@ -1,7 +1,7 @@
 import React from "react"
 
 import Section from "@/components/shared/section"
-import GradientMockup from "@/components/shared/about/gradient-mockup"
+import GradientMockup from "@/components/ui/gradient-mockup"
 import { Highlights } from "@/components/shared/skills/highlights"
 import HeroCard from "@/components/shared/skills/hero-card"
 import LabCard from "@/components/shared/skills/lab-card"

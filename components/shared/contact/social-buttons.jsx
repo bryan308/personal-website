@@ -44,7 +44,7 @@ function SocialButtons() {
 	]
 
 	return (
-		<div className="mt-6 max-w-md mx-auto flex flex-wrap justify-center gap-4">
+		<div className="mt-6 mx-auto w-fit grid grid-cols-2 justify-center gap-4">
 			{socialMedia.map((media, index) => (
 				<motion.div
 					key={index}
@@ -61,7 +61,7 @@ function SocialButtons() {
 				>
 					<Button
 						variant="outline"
-						className="border-primary/50 flex max-w-xs mx-auto"
+						className="border-primary/50 flex max-w-xs"
 						asChild
 					>
 						<Link

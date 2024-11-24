@@ -3,7 +3,7 @@ import React from "react"
 import Section from "@/components/shared/section"
 import Subheader from "@/components/ui/subheader"
 import Header from "@/components/ui/page-header"
-import GradientMockup from "@/components/shared/about/gradient-mockup"
+import GradientMockup from "@/components/ui/gradient-mockup"
 import Form from "@/components/shared/contact/form"
 import SocialButtons from "@/components/shared/contact/social-buttons"
 

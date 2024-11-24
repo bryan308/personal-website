@@ -1,6 +1,6 @@
 import React from "react"
 
-import GradientMockup from "@/components/shared/about/gradient-mockup"
+import GradientMockup from "@/components/ui/gradient-mockup"
 import GridItem from "@/components/shared/about/grid-item"
 import Section from "@/components/shared/section"
 import { Lamp } from "@/components/shared/about/lamp"

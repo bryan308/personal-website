@@ -15,7 +15,7 @@ export function ModeToggle() {
 
 	if (!mounted) {
 		return (
-			<div className="size-9 grid place-content-center">
+			<div className="size-8 grid place-content-center">
 				<LoaderIcon className="text-foreground size-4 animate-spin" />
 			</div>
 		)

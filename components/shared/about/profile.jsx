@@ -4,15 +4,15 @@ import { motion } from "motion/react"
 import Image from "next/image"
 import React from "react"
 
-export const Profile = () => {
+export const Profile = ({ delay = 0.5, duration = 0.5, blur = 6 }) => {
 	return (
 		<motion.div
-			initial={{ opacity: 0, scale: 0, filter: "blur(6px)" }}
-			whileInView={{ opacity: 1, scale: 1, filter: "blur(0)" }}
+			initial={{ opacity: 0, y: "10%", filter: `blur(${blur}px)` }}
+			whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
 			viewport={{ amount: 0.5, once: false }}
 			transition={{
-				delay: 0.5,
-				duration: 0.8,
+				delay: delay,
+				duration: duration,
 				ease: "easeInOut",
 				repeat: 0,
 				repeatType: "loop",

@@ -60,7 +60,7 @@ export default function Form() {
 							</Label>
 							<Input
 								id="email"
-								type="text"
+								type="email"
 								required
 							/>
 						</div>

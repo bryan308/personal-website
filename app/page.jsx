@@ -1,5 +1,6 @@
 "use client"
 
+import { Profile } from "@/components/shared/about/profile"
 import { motion } from "motion/react"
 import Image from "next/image"
 
@@ -42,8 +43,8 @@ export default function Home() {
 						</motion.p>
 					</div>
 					<motion.div
-						initial={{ opacity: 0, scale: 0, filter: "blur(12px)" }}
-						animate={{ opacity: 1, scale: 1, filter: "blur(0)" }}
+						initial={{ opacity: 0, y: "10%", filter: "blur(10px)" }}
+						whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
 						transition={{ ease: "easeInOut", duration: 0.5, delay: 0.6 }}
 						className="flex flex-col items-center"
 					>
