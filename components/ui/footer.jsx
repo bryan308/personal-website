@@ -20,7 +20,7 @@ export const Footer = () => {
 				</Link>{" "}
 				and{" "}
 				<Link
-					href="https://cdrcangulo.vercel.app"
+					href="https://cedricc.vercel.app"
 					className="text-primary hover:text-primary/90"
 					target="_blank"
 					rel="noopener noreferrer"
