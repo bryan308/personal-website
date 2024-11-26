@@ -1,6 +1,5 @@
 "use client"
 
-import { Profile } from "@/components/shared/about/profile"
 import { motion } from "motion/react"
 import Image from "next/image"
 
@@ -12,14 +11,14 @@ export default function Home() {
 					<motion.div
 						initial={{ opacity: 0, bottom: "-30rem" }}
 						animate={{ opacity: 1, bottom: "-15rem" }}
-						transition={{ ease: "easeInOut", duration: 2, delay: 1 }}
-						className="absolute w-[120%] h-[800px] -z-20 rounded-[200px] blur-[122px] bg-gradient-to-t from-[#021d62] to-[#18db71]"
+						transition={{ ease: "easeInOut", duration: 1.25, delay: 0.5 }}
+						className="absolute w-[120%] h-[800px] -z-20 rounded-[200px] blur-[122px] bg-gradient-to-t from-[#021d62] to-[#18db71] will-change-transform"
 					/>
 					<motion.div
 						initial={{ opacity: 0, bottom: "-30rem" }}
 						animate={{ opacity: 1, bottom: "-15rem" }}
-						transition={{ ease: "easeInOut", duration: 2, delay: 1 }}
-						className="absolute w-full max-w-4xl h-[400px] -z-10 rounded-3xl blur-[122px] bg-[#128ba3]"
+						transition={{ ease: "easeInOut", duration: 1.25, delay: 0.5 }}
+						className="absolute w-full max-w-4xl h-[400px] -z-10 rounded-3xl blur-[122px] bg-[#128ba3] will-change-transform"
 					/>
 				</div>
 				<div className="z-10 flex flex-col-reverse items-center justify-center md:justify-evenly gap-8 h-full mx-6 my-28 md:mx-auto lg:flex-row max-w-7xl">
