@@ -3,7 +3,7 @@
 import { motion } from "motion/react"
 import React from "react"
 
-export const Highlights = () => {
+export const Gameplay = () => {
 	return (
 		<motion.video
 			initial={{ opacity: 0, filter: "blur(12px)" }}
@@ -24,7 +24,7 @@ export const Highlights = () => {
 			preload="auto"
 		>
 			<source
-				src="/highlights.mp4"
+				src="/gameplay.mp4"
 				type="video/mp4"
 			/>
 			<p>Your browser does not support the video tag.</p>
