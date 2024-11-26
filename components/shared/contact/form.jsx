@@ -46,8 +46,8 @@ export default function Form() {
 			setTimeout(() => {
 				setIsSubmitting(false)
 				toast({
-					title: "Form submitted successfully!",
-					description: "We'll get back to you soon.",
+					title: "Message Delivered!",
+					description: "Thank you for the feedback :).",
 				})
 				setFormData({ fname: "", lname: "", email: "", message: "" })
 			}, 2000)
@@ -77,7 +77,7 @@ export default function Form() {
 							<div className="grid gap-2">
 								<Label
 									htmlFor="fname"
-									className="font-header"
+									className="font-header font-semibold"
 								>
 									First Name
 								</Label>
@@ -93,7 +93,7 @@ export default function Form() {
 							<div className="grid gap-2">
 								<Label
 									htmlFor="lname"
-									className="font-header"
+									className="font-header font-semibold"
 								>
 									Last Name
 								</Label>
@@ -109,7 +109,7 @@ export default function Form() {
 							<div className="grid gap-2">
 								<Label
 									htmlFor="email"
-									className="font-header"
+									className="font-header font-semibold"
 								>
 									Email
 								</Label>
@@ -125,7 +125,7 @@ export default function Form() {
 							<div className="grid gap-2">
 								<Label
 									htmlFor="message"
-									className="font-header"
+									className="font-header font-semibold" 
 								>
 									Feedback or Message
 								</Label>

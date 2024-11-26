@@ -60,7 +60,7 @@ function SkillsPage() {
 					delay={0.25}
 					className="text-center"
 				>
-					My works from ITWST02
+					My works from School Laboratories
 				</Subheader>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center mt-8">
 					{labCards.map((lab, index) => (
@@ -78,7 +78,8 @@ function SkillsPage() {
 				className="my-40"
 				src="/images/noisy-grad2.jpg"
 			/>
-			<div className="my-40">
+			<div className="my-40 mt-52">
+				<Header>Games</Header>
 				<Subheader className="text-center">Statistics of My Game</Subheader>
 				<GameStats />
 			</div>
@@ -99,6 +100,9 @@ function SkillsPage() {
 				<Subheader className="text-center">Gameplay</Subheader>
 				<Gameplay />
 			</div>
+			<div className="mt-40 mt-52">
+				<Header>SOON!</Header>
+			</div>
 		</Section>
 	)
 }
@@ -108,5 +112,5 @@ export default SkillsPage
 export const metadata = {
 	title: "Skills",
 	description:
-		"Explore my skills and projects, including laboratory works, favorite heroes, and highlights.",
+		"Explore my skills and projects, including laboratory works, games, and more.",
 }

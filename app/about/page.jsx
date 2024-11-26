@@ -72,6 +72,8 @@ function AboutPage() {
 						))}
 					</div>
 				</div>
+				
+			
 			</Section>
 			<Lamp />
 		</>
