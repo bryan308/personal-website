@@ -46,12 +46,12 @@ export default function FloatingNav() {
 	]
 
 	return (
-		<nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-xl transition-opacity duration-300">
+		<nav className="fixed top-4 left-1/2 w-[90%] max-w-4xl transition-opacity duration-300 transform -translate-x-1/2 z-50">
 			<div
 				className={cn(
 					"backdrop-saturate-[30] backdrop-blur-[24px]",
 					"bg-white/80 dark:bg-[#0a0a0a]/80",
-					"rounded-full shadow border border-foreground/20"
+					"rounded-xl shadow border border-foreground/20"
 				)}
 			>
 				<div className="container mx-auto px-3 py-2">
