@@ -1,5 +1,6 @@
 "use client"
 
+import Aurora from "@/components/ui/aurora"
 import { motion } from "motion/react"
 import Image from "next/image"
 
@@ -7,20 +8,20 @@ export default function Home() {
 	return (
 		<>
 			<div className="relative flex items-center justify-center h-screen overflow-hidden">
-				<div className="-z-10 absolute top-28 flex items-center justify-center w-full h-full overflow-hidden rounded-tl-[20rem] rounded-tr-[20rem] blur-3xl">
-					<motion.div
-						initial={{ opacity: 0, bottom: "-30rem" }}
-						animate={{ opacity: 1, bottom: "-15rem" }}
-						transition={{ ease: "easeInOut", duration: 1.25, delay: 0.5 }}
-						className="absolute w-[120%] h-[800px] -z-20 rounded-[200px] blur-[122px] bg-gradient-to-t from-[#021d62] to-[#18db71] will-change-transform"
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ ease: "easeIn", duration: 0.8, delay: 0 }}
+					className="absolute w-full h-2/4 top-0 z-0"
+				>
+					<Aurora
+						colorStops={[
+							"dark:bg-blue-800 bg-blue-200",
+							"dark:bg-green-500 bg-green-200",
+							"dark:bg-teal-600 bg-teal-200",
+						]}
 					/>
-					<motion.div
-						initial={{ opacity: 0, bottom: "-30rem" }}
-						animate={{ opacity: 1, bottom: "-15rem" }}
-						transition={{ ease: "easeInOut", duration: 1.25, delay: 0.5 }}
-						className="absolute w-full max-w-4xl h-[400px] -z-10 rounded-3xl blur-[122px] bg-[#128ba3] will-change-transform"
-					/>
-				</div>
+				</motion.div>
 				<div className="z-10 flex flex-col-reverse items-center justify-center md:justify-evenly gap-8 h-full mx-6 my-28 md:mx-auto lg:flex-row max-w-7xl">
 					<div className="p-4 text-center lg:text-left md:p-0">
 						<motion.h1
